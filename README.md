@@ -1,4 +1,5 @@
 Credit Card Fraud Detection
+
 A machine learning project to detect fraudulent credit card transactions using Python and Scikit-learn.
 The model is trained and evaluated on an imbalanced dataset to accurately classify fraudulent and genuine transactions.
 
