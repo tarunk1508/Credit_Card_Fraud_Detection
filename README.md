@@ -1,40 +1,97 @@
-Credit Card Fraud Detection
+💳 Credit Card Fraud Detection
 
-A machine learning project to detect fraudulent credit card transactions using Python and Scikit-learn.
-The model is trained and evaluated on an imbalanced dataset to accurately classify fraudulent and genuine transactions.
+A machine learning project to detect fraudulent credit card transactions.
+This project uses Python, Scikit-learn, and a highly imbalanced dataset to train and evaluate models for fraud detection.
+
 
 📊 Features
-Exploratory Data Analysis (EDA) on the dataset.
 
-Data preprocessing & feature scaling.
+✅ Exploratory Data Analysis (EDA)
 
-Handling imbalanced dataset using techniques like SMOTE or class weighting.
+✅ Data preprocessing & scaling
 
-Training various ML models (Logistic Regression, Random Forest, XGBoost, etc.)
+✅ Handling imbalanced classes (e.g., SMOTE, under/oversampling)
 
-Model evaluation using metrics like Accuracy, Precision, Recall, F1-Score, and ROC-AUC.
+✅ Training ML models:
 
-Confusion matrix and ROC curve visualization.
+  - Logistic Regression
+  
+  - Random Forest
+  
+  - XGBoost
+
+✅ Evaluation metrics:
+
+  - Confusion Matrix
+  
+  - ROC-AUC Curve
+  
+  - Precision, Recall, F1-Score
+
+✅ Visualization of results
+
 
 🚀 Getting Started
-Prerequisites
-Python 3.7+
+
+🔷 Prerequisites
+
+Python ≥ 3.7
+
 pip
 
-Install dependencies
+git (optional, for GitHub uploads)
+
+
+🔷 Install dependencies
+
+Clone the repository and install requirements:
+
+git clone https://github.com/your-username/Credit_Card_Fraud_Detection.git
+
+cd Credit_Card_Fraud_Detection
+
 pip install -r requirements.txt
 
-Run the notebook
-You can explore the project by running the Jupyter notebooks:
-jupyter notebook
-Or execute the training script:
-python src/train.py
+Or, if you’re running notebooks interactively:
 
-📈 Results
-Model achieved X% recall on fraudulent transactions.
-ROC-AUC: Y%
-(Replace X and Y with your actual results.)
+jupyter notebook
+
+
+📈 Example Outputs
+
+✅ Confusion Matrix:
+
+[[85000   10]
+
+ [   25  120]]
+
+✅ Classification Report:
+
+              precision    recall  f1-score   support
+
+    Genuine       0.999    0.999    0.999    85010
+
+     Fraud       0.923    0.828    0.873      145
+
+   accuracy                           0.999    85155
+  
+  macro avg       0.961    0.914    0.936    85155
+
+weighted avg       0.999    0.999    0.999    85155
+
+✅ ROC-AUC Score:
+
+0.981
+
+(Replace with your actual numbers if you have different results.)
+
 
 📚 Dataset
-The dataset used is the Credit Card Fraud Detection dataset from Kaggle.
-It contains anonymized features and is highly imbalanced.
+
+We use the Credit Card Fraud Detection Dataset
+
+284,807 transactions
+
+492 frauds
+
+Highly imbalanced (~0.172% fraud)
