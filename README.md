@@ -46,7 +46,7 @@ git (optional, for GitHub uploads)
 
 Clone the repository and install requirements:
 
-git clone https://github.com/your-username/Credit_Card_Fraud_Detection.git
+git clone https://github.com/tarunk1508/Credit_Card_Fraud_Detection
 
 cd Credit_Card_Fraud_Detection
 
